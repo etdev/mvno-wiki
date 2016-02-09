@@ -1,0 +1,23 @@
+default: &default
+  username: postgres
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: mvno_development
+
+test:
+  <<: *default
+  database: mvno_test
+  username:
+  password:
+
+production:
+  <<: *default
+  database: mvno_production
+  username: mvno
+  password: <%= ENV['MVNO_DATABASE_PASSWORD'] %>
+
+    yoajsf
