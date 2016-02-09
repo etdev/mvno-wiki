@@ -1,0 +1,24 @@
+.navbar {
+  height: $nav-height;
+  background-color: $nav-bg-color;
+  line-height: $nav-height;
+  color: $gray-dark;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.navbar > .site-logo {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 0 0.2rem 0 0.8rem;
+  color: $gray-mid-dark;
+}
+
+.navbar > .site-title {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  a {
+    color: $gray-dark;
+    &:hover { color: $gray-dark; }
+  }
+}

@@ -1,13 +1,10 @@
+// scss pre-reqs
 @import "bourbon";
 @import "neat";
-
-// scss pre-reqs
 @import "variables";
 
-// navbar
-@import "navbar";
+// defaults
+@import "defaults";
 
-// layout
-@import "layout/body";
-
-
+// components
+@import "components/navbar";
