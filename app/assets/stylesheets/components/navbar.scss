@@ -1,14 +1,18 @@
 .navbar {
-  @include outer-container(2000px);
+  @include outer-container;
+  @include media($ipad) {
+    @include outer-container(2000px);
+  }
   height: $nav-height;
   background-color: $nav-bg-color;
   line-height: $nav-height;
   color: $gray-dark;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid $gray-extremely-light;
 }
 
 .navbar > .site-title {
-  @include span-columns(12);
+  margin: 0;
+  @include span-columns(8);
   @include media($ipad) {
     @include span-columns(3);
   }
@@ -27,39 +31,50 @@
 }
 
 .nav-links {
+  height: $nav-height-secondary;
   line-height: $nav-height-secondary;
+  background-color: $nav-bg-color;
+  border-bottom: 1px solid $gray-extremely-light;
+  text-align: center;
+  ul li {
+    padding: 0 1rem;
+  }
   @include span-columns(12);
   @include media($ipad) {
+    padding: 0 1.5rem;
+    height: $nav-height;
     line-height: $nav-height;
-    @include span-columns(9);
-  }
-  ul {
-    text-align: center;
-    @include media($ipad) {
-      text-align: left;
-      display: block;
-      padding: 0 1.5rem;
-      li:last-child {
-        float: right;
-      }
-    }
-    li {
-      padding: 0 0.5rem;
-      display: inline-block;
+    overflow-y: hidden;
+    @include span-columns(6);
+    ul li {
+      padding: 0 2rem;
     }
   }
 }
 
-li.login-btn a {
-  height: $nav-height - 2rem;
-  line-height: $nav-height;
-  margin-top: 1rem;
-  border: 2px solid $gray-ghost-btn-outline;
-  border-radius: 500px;
-  padding: 0.5rem 1rem;
-  color: $gray-ghost-btn-text;
-  &:hover {
-    border: 2px solid $gray-ghost-btn-outline-hover;
-    color: $gray-ghost-btn-text-hover;
+.nav-login-btn {
+  text-align: right;
+  padding-right: 1rem;
+  @include span-columns(4);
+  @include omega;
+  @include media($ipad) {
+    float: right !important;
+    @include span-columns(3);
+  }
+}
+
+.login-btn {
+  a {
+    height: $nav-height - 2rem;
+    line-height: $nav-height;
+    margin-top: 1rem;
+    border: 2px solid $gray-ghost-btn-outline;
+    border-radius: 500px;
+    padding: 0.5rem 1rem;
+    color: $gray-ghost-btn-text;
+    &:hover {
+      border: 2px solid $gray-ghost-btn-outline-hover;
+      color: $gray-ghost-btn-text-hover;
+    }
   }
 }

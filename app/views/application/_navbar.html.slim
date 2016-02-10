@@ -4,9 +4,11 @@ nav.navbar
     = link_to root_path do
       = t("app_name")
       span.highlight wiki
+  section.nav-login-btn
+    .login-btn = link_to t("nav_links.login-signup"), "#"
   section.nav-links
     ul
       li = link_to t("nav_links.phones"), "#"
       li = link_to t("nav_links.mvnos"), "#"
       li = link_to t("nav_links.carriers"), "#"
-      li.login-btn = link_to t("nav_links.login"), "#"
+      li = link_to t("nav_links.faq"), "#"
