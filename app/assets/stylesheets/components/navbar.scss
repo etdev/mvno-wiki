@@ -15,10 +15,8 @@
   @include media($large-desktop) {
     @include span-columns(3);
   };
-  background-color: red;
   font-size: 1.5rem;
   font-weight: 600;
-  color: $gray-mid-dark;
   a {
     color: $gray-dark;
     &:hover { color: $gray-dark; }
@@ -39,6 +37,5 @@
   @include media($large-desktop) {
     @include span-columns(9);
   }
-  background-color: blue;
   height: $nav-height;
 }
