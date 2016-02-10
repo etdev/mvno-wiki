@@ -1,4 +1,5 @@
 .navbar {
+  @include outer-container(2000px);
   height: $nav-height;
   background-color: $nav-bg-color;
   line-height: $nav-height;
@@ -6,19 +7,38 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.navbar > .site-logo {
-  display: inline-block;
-  font-size: 1.5rem;
-  margin: 0 0.2rem 0 0.8rem;
-  color: $gray-mid-dark;
-}
-
 .navbar > .site-title {
   display: inline-block;
+  @include media($mobile) {
+    @include span-columns(6);
+  };
+  @include media($large-desktop) {
+    @include span-columns(3);
+  };
+  background-color: red;
   font-size: 1.5rem;
   font-weight: 600;
+  color: $gray-mid-dark;
   a {
     color: $gray-dark;
     &:hover { color: $gray-dark; }
   }
+  span.highlight {
+    color: $highlight-color;
+  }
+  .site-logo {
+    padding: 0 0.2rem 0 0.8rem;
+  }
+}
+
+.nav-links {
+  display: inline-block;
+  @include media($mobile) {
+    @include span-columns(6);
+  }
+  @include media($large-desktop) {
+    @include span-columns(9);
+  }
+  background-color: blue;
+  height: $nav-height;
 }
