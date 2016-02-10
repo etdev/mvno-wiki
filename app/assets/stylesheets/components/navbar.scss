@@ -8,7 +8,6 @@
 }
 
 .navbar > .site-title {
-  background-color: blue;
   @include span-columns(12);
   @include media($ipad) {
     @include span-columns(3);
@@ -28,7 +27,6 @@
 }
 
 .nav-links {
-  background-color: red;
   line-height: $nav-height-secondary;
   @include span-columns(12);
   @include media($ipad) {
@@ -49,5 +47,19 @@
       padding: 0 0.5rem;
       display: inline-block;
     }
+  }
+}
+
+li.login-btn a {
+  height: $nav-height - 2rem;
+  line-height: $nav-height;
+  margin-top: 1rem;
+  border: 2px solid $gray-ghost-btn-outline;
+  border-radius: 500px;
+  padding: 0.5rem 1rem;
+  color: $gray-ghost-btn-text;
+  &:hover {
+    border: 2px solid $gray-ghost-btn-outline-hover;
+    color: $gray-ghost-btn-text-hover;
   }
 }

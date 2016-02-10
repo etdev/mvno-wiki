@@ -21,3 +21,8 @@
 
 en:
   app_name: MVNO
+  nav_links:
+    phones: Phones
+    mvnos: Mvnos
+    carriers: Carriers
+    login: Login
