@@ -24,3 +24,8 @@ group :development, :test do
   gem 'capybara-webkit'
   gem 'database_cleaner'
 end
+
+group :development do
+  gem 'guard'
+  gem 'guard-livereload', '~> 2.5', require: false
+end

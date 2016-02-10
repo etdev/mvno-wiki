@@ -1,8 +1,12 @@
 nav.navbar
-  .site-title
+  section.site-title
     i.fa.fa-leaf.site-logo
     = link_to root_path do
       = t("app_name")
       span.highlight wiki
-  .nav-links
-    | &nbsp;
+  section.nav-links
+    ul
+      li = link_to "Phones", "#"
+      li = link_to "Mvnos", "#"
+      li = link_to "Carriers", "#"
+      li = link_to "FAQ", "#"

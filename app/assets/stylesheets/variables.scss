@@ -16,27 +16,28 @@ $gray-light: #8F8F8F;
 
 // dimensions
 $nav-height: 65px;
+$nav-height-secondary: 50px;
 
 // neat
 $iphone: em(320);
 $samsung-galaxy: em(380);
 $ipad: em(768);
 
-//   landscape;
-$iphone-ls: em(480);
-$iphone-5-ls: em(568);
-$samsung-galaxy-ls: em(685);
+  // landscape
+  $iphone-ls: em(480);
+  $iphone-5-ls: em(568);
+  $samsung-galaxy-ls: em(685);
 
-$ipad-ls: em(1024);
-$desktop-size: em(1200);
-$large-desktop-size: em(1600);
+  $ipad-ls: em(1024);
+  $desktop-size: em(1200);
+  $large-desktop-size: em(1600);
 
-//   breakpoints;
-$mobile: new-breakpoint(min-width $iphone orientation portrait 12);
-$tablet: new-breakpoint(min-width $ipad orientation portrait 12);
+  // breakpoints
+  $mobile: new-breakpoint(min-width $iphone orientation portrait 12);
+  $tablet: new-breakpoint(min-width $ipad orientation portrait 12);
 
-$mobile-ls: new-breakpoint(min-width $iphone-ls orientation landscape 12);
-$tablet-ls: new-breakpoint(min-width $ipad-ls orientation landscape 12);
+  $mobile-ls: new-breakpoint(min-width $iphone-ls orientation landscape 12);
+  $tablet-ls: new-breakpoint(min-width $ipad-ls orientation landscape 12);
 
-$desktop: new-breakpoint(min-width $desktop-size 12);
-$large-desktop: new-breakpoint(min-width $large-desktop-size 12);
+  $desktop: new-breakpoint(min-width $desktop-size 12);
+  $large-desktop: new-breakpoint(min-width $large-desktop-size 12);
