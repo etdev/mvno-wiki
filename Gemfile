@@ -14,6 +14,7 @@ gem 'slim-rails'
 gem 'bourbon', '~> 4.2.2'
 gem 'neat'
 gem 'kaminari'
+gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'pry'
