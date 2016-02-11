@@ -15,6 +15,9 @@ config/initializers/secret_token.rb
 config/secrets.yml
 config/database.yml
 
+/shared/log/*
+/shared/pids/*
+
 ## Environment normalization:
 /.bundle
 /vendor/bundle
@@ -26,3 +29,4 @@ config/database.yml
 # Ignore pow environment settings
 .powenv
 
+/public/assets
