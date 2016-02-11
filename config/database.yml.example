@@ -17,7 +17,5 @@ test:
 production:
   <<: *default
   database: mvno_production
-  username: mvno
+  username: <%= ENV['MVNO_DATABASE_USERNAME'] %>
   password: <%= ENV['MVNO_DATABASE_PASSWORD'] %>
-
-    yoajsf
