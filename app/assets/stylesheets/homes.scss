@@ -1,11 +1,17 @@
 .main-hero-unit {
+  padding: 12vh 2vh;
+  @include background(image-url("patterns/cubes.png"), linear-gradient(to left, #00d2ff, #3a7bd5));
   text-align: center;
-  h2 {
+  h2.title {
     margin: 0;
-    padding: 10rem 0;
     color: #FFF;
-    font-size: 3rem;
-    font-family: Montserrat;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  p.subtitle {
+    padding-top: 1.5vh;
+    color: #FFF;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
   }
 }

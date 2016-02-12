@@ -1,9 +1,11 @@
 .navbar {
   @include outer-container;
+  height: $nav-height + $nav-height-secondary;
+
   @include media($ipad) {
     @include outer-container(2000px);
+    height: $nav-height;
   }
-  height: $nav-height;
   background-color: $nav-bg-color;
   line-height: $nav-height;
   color: $gray-dark;
