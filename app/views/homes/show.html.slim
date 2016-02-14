@@ -1,5 +1,19 @@
-.main-hero-unit
+section.main-hero-unit
   h2.title
-    = t("homes.main-hero-title")
+    = t(".main-hero-title")
   p.subtitle
-    = t("homes.main-hero-subtitle")
+    = t(".main-hero-subtitle")
+  i.down-btn.fa.fa-chevron-down.fa-2x
+
+section.home-search-form
+  .search-phone
+    i.fa.fa-mobile.fa-4x
+    p.phone-search-msg = t(".phone-search-msg")
+  .search-network
+    i.fa.fa-bank.fa-4x
+    p.phone-search-msg = t(".network-search-msg")
+  .search-data
+    i.fa.fa-shopping-basket.fa-4x
+    p.phone-search-msg = t(".data-search-msg")
+
+.btn-primary

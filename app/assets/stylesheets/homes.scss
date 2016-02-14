@@ -1,17 +1,60 @@
 .main-hero-unit {
-  padding: 12vh 2vh;
-  @include background(image-url("patterns/cubes.png"), linear-gradient(to left, #00d2ff, #3a7bd5));
+  padding: 12vh 2vh 2vh;
+  @include background(image-url("patterns/cubes.png"), linear-gradient(to left, #00ABFF, #3a7bd5));
   text-align: center;
-  h2.title {
-    margin: 0;
+  .down-btn {
+    margin-top: 10vh;
     color: #FFF;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
   }
-  p.subtitle {
-    padding-top: 1.5vh;
-    color: #FFF;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
+}
+
+h2.title {
+  margin: 0;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+p.subtitle {
+  padding-top: 1.5vh;
+  color: #FFF;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.home-search-form {
+  height: 50vh;
+  @include outer-container(2000px);
+
+  .search-phone {
+    padding: 2rem;
+    text-align: center;
+    background: $main-bg-color;
+    font-family: 'Montserrat', sans-serif;
+    color: $gray-mid-dark;
+    height: 50vh;
+    @include span-columns(12);
+    @include media($ipad) {
+      @include span-columns(4);
+      height: auto;
+    }
+    i.fa {
+      color: $highlight-color;
+      padding-top: 5vh;
+      padding-bottom: 2vh;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  .search-network {
+    @extend .search-phone;
+    @include media($ipad) { background: inherit; }
+    background: #FFF;
+  }
+
+  .search-data {
+    @extend .search-phone;
   }
 }

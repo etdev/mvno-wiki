@@ -3,17 +3,16 @@
   height: $nav-height + $nav-height-secondary;
 
   @include media($ipad) {
+    border-bottom: 1px solid $gray-extremely-light;
     @include outer-container(2000px);
     height: $nav-height;
   }
   background-color: $nav-bg-color;
   line-height: $nav-height;
   color: $gray-dark;
-  border-bottom: 1px solid $gray-extremely-light;
 }
 
 .navbar > .site-title {
-  margin: 0;
   @include span-columns(8);
   @include media($ipad) {
     @include span-columns(3);
@@ -36,12 +35,14 @@
   height: $nav-height-secondary;
   line-height: $nav-height-secondary;
   background-color: $nav-bg-color;
-  border-bottom: 1px solid $gray-extremely-light;
+  border-top: 1px solid $gray-extremely-light;
   text-align: center;
   ul li {
     padding: 0 1rem;
+    &.faq { display: none; }
   }
   @include span-columns(12);
+  max-width: 100%;
   @include media($ipad) {
     padding: 0 1.5rem;
     height: $nav-height;
