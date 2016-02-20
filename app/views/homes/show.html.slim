@@ -9,11 +9,20 @@ section.home-search-form
   .search-phone
     i.fa.fa-mobile.fa-4x
     p.phone-search-msg = t(".phone-search-msg")
+
   .search-network
     i.fa.fa-bank.fa-4x
     p.phone-search-msg = t(".network-search-msg")
+
+    select id="e1"
+        option value="AL" Alabama
+        option value="WY" Wyoming
+
   .search-data
     i.fa.fa-shopping-basket.fa-4x
     p.phone-search-msg = t(".data-search-msg")
 
 .btn-primary
+
+javascript:
+  $(document).ready(function() { $("#e1").select2(); });

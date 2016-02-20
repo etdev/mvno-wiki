@@ -1,0 +1,14 @@
+.footer {
+  @include outer-container(2000px);
+  border-top: 1px solid $gray-extremely-light;
+  .contents {
+    height: 10vh;
+    @include span-columns(12);
+    p {
+      color: $gray-light;
+      font-size: 0.9rem;
+      line-height: 10vh;
+      padding-left: 2rem;
+    }
+  }
+}
