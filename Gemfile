@@ -19,6 +19,7 @@ gem 'font-awesome-sass'
 group :development, :test do
   gem 'pry'
   gem 'byebug'
+  gem 'pry-byebug'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'factory_girl_rails'
@@ -32,8 +33,4 @@ end
 
 group :test do
   gem 'capybara-webkit'
-end
-
-group :production do
-  gem 'puma'
 end

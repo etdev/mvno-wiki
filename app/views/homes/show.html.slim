@@ -6,19 +6,25 @@ section.main-hero-unit
   i.down-btn.fa.fa-chevron-down.fa-2x
 
 section.home-search-form
-  = form_for @home_form, url: search_plans_path, method: :post do |form|
-    .search-phone
-      i.fa.fa-mobile.fa-4x
-      p.phone-search-msg = t(".phone-search.message")
+  = form_for @home_form, url: plan_search_path, method: :post do |form|
+    .search-container
+      .search-phone
+        i.fa.fa-mobile.fa-4x
+        p.phone-search-msg = t(".phone-search.message")
 
-      = form.select(:phone_id, options_for_select(Phone.all), { include_blank: t("homes.show.phone-search.no-selection") }, id: "phone-select" )
+        = form.select(:phone_id, options_for_select(Phone.all), { include_blank: t(".phone-search.no-selection") }, id: "phone-select" )
 
-    .search-network
-      i.fa.fa-bank.fa-4x
-      p.message-search-msg = t(".network-search.message")
+      .search-network
+        i.fa.fa-bank.fa-4x
+        p.message-search-msg = t(".network-search.message")
 
-    .search-data
-      i.fa.fa-shopping-basket.fa-4x
-      p.data-search-msg = t(".data-search.message")
+        = form.select(:network_id, options_for_select(Network.all), { include_blank: t(".network-search.no-selection") }, id: "phone-select" )
 
-.btn-primary
+      .search-data
+        i.fa.fa-shopping-basket.fa-4x
+        p.data-search-msg = t(".data-search.message")
+
+        = form.select(:data_size, @home_form.data_size_options, { include_blank: t(".data-size-search.no-selection") }, id: "data_size-select" )
+
+    .btn-primary
+      = form.submit t(".submit")

@@ -37,7 +37,7 @@ en:
       network-search:
         message: 2. Choose your preferred network
         no-selection: Any Network
-      data-search:
+      data-size-search:
         message: 3. Choose your data tier
         no-selection: No min. data amount
       submit: Find plans

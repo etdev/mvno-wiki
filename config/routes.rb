@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root "homes#show"
-  post "search_plans", to: "plans#search"
+  post :plan_search, to: "plan_searches#index"
 end

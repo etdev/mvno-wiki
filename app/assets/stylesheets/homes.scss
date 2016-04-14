@@ -58,3 +58,9 @@ p.subtitle {
     @extend .search-phone;
   }
 }
+
+.btn-primary {
+  @include clearfix;
+  text-align: center;
+}
+
