@@ -31,6 +31,13 @@ en:
     show:
       main-hero-title: Free yourself from tyranny.
       main-hero-subtitle: Tired of overpriced cell phone carriers?  Switch to an MVNO today.
-      phone-search-msg: 1. Choose your device
-      network-search-msg: 2. Choose your preferred network
-      data-search-msg: 3. Choose your data tier
+      phone-search:
+        message: 1. Choose your device
+        no-selection: Any Device
+      network-search:
+        message: 2. Choose your preferred network
+        no-selection: Any Network
+      data-search:
+        message: 3. Choose your data tier
+        no-selection: No min. data amount
+      submit: Find plans

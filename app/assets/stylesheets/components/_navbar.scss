@@ -48,6 +48,7 @@
     height: $nav-height;
     line-height: $nav-height;
     overflow-y: hidden;
+    border-top: none;
     @include span-columns(6);
     ul li {
       padding: 0 2rem;
